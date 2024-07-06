@@ -18,3 +18,8 @@ imgs.forEach((div, index) => {
     overlayImg.src = img[index].src;
   });
 });
+
+overlay.addEventListener('click', () => {
+  overlay.style.zIndex = '-1';
+  box.style.opacity = '0';
+});
